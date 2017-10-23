@@ -1,5 +1,6 @@
 //Checking Off Specific Todos By Clicking
-$("li").click(function() {
+//ul lerin icindeki butun li-lara aid olur. gelecek elementlerde buradadir
+$("ul").on("click", "li", function() {
 	//new version
 	$(this).toggleClass("completed")
 
@@ -26,9 +27,19 @@ $("li").click(function() {
 
 
 //Click on X to delete Todos
-$("li span").click(function(event){
+//ul lerin icindeki butun spanlara aid olur. gelecek elementlerde buradadir
+$("ul").on("click", "span", function(event){
 	$(this).parent().fadeOut(500, function(){
 		$(this).remove()
 	})
 	event.stopPropagation()
+})
+
+//Add new todos
+$("input[type='text']").keypress(function(event){
+	if(event.which === 13) {
+		var todoText = $(this).val()
+		$(this).val("")
+		$("ul").append("<li><span>X</span> " + todoText + "</li>")
+	}
 })
