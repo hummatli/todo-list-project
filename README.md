@@ -9,5 +9,5 @@ App has hosted in this [URL to the project](https://hummatli.github.io/todo-list
 This app has created on my JavaScript, HTML, CSS, jQuery learning process.
 
 <p align="center">
-<img src="https://raw.githubusercontent.com/hummatli/color-game/master/screenshot.png" width="300px"/>
+<img src="https://raw.githubusercontent.com/hummatli/todo-list-project/master/screenshot.png" width="300px"/>
 </p>
